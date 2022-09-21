@@ -62,8 +62,8 @@ To https://github.com/{YOUR_USERNAME}/{YOUR_REPO}.git
  * [new branch]      master -> master 
 ```
  
->- Before continuing you need to familiarize yourself with some useful git commands
-[Git Commands](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdev.to%2Fneshaz%2Fgit-commands-ultimate-tutorial-part-2-7ko&psig=AOvVaw0oKtIx19UjDhFwxM3wngZh&ust=1663852393397000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPjK9dL7pfoCFQAAAAAdAAAAABAD)
+- Before continuing you need to familiarize yourself with some useful git commands
+[Git Commands](https://res.cloudinary.com/practicaldev/image/fetch/s--ShHSfi-a--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://cl.ly/1N2U2i2Z2C16/Image%25202018-04-11%2520at%252012.47.23%2520PM.png)
 
 ```
 git add file_name
