@@ -30,7 +30,38 @@ $ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 >- Using the graphic interface on the [Github](https://github.com/) website.
 [Repostitory creation](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcooc-china.gitbooks.io%2Fcooc-howto-book%2Fenglish-version%2Fcreate-the-book-and-make-connection-with-github-repository.html&psig=AOvVaw3gDZie24JoAbJrWZoqD4Za&ust=1663849720214000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMim7bPxpfoCFQAAAAAdAAAAABAP)
-
+[PAT creation](https://raw.githubusercontent.com/devgemmy/gist-images/main/git-token.png)
+>- Then you need to clone your repository
+```shell
+root@896cf839cf9a:/# git clone https://{YOUR_PERSONAL_TOKEN}@github.com/{YOUR_USERNAME}/{YOUR_REPO}.git                  
+Cloning into '{YOUR_REPO}'...
+warning: You appear to have cloned an empty repository.
+```
+>- All you need to do now is to navigate to the repository, create the README.md and push the modifications
+```shell
+root@896cf839cf9a:/# cd {YOUR_REPO}/
+root@896cf839cf9a:/{YOUR_REPO}#
+```
+```shell
+root@896cf839cf9a:/{YOUR_REPO}# echo 'My first readme' > README.md                                                                 
+root@896cf839cf9a:/{YOUR_REPO}# cat README.md                                                                                      
+My first readme 
+```
+```shell
+root@896cf839cf9a:/{YOUR_REPO}# git add .
+root@896cf839cf9a:/{YOUR_REPO}# git commit -m 'My first commit'
+[master (root-commit) 98eef93] My first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+root@896cf839cf9a:/{YOUR_REPO}# git push                                                                                           
+Enumerating objects: 3, done.                                                                                                         
+Counting objects: 100% (3/3), done.                                                                                                   
+Writing objects: 100% (3/3), 212 bytes | 212.00 KiB/s, done.                                                                          
+Total 3 (delta 0), reused 0 (delta 0)                                                                                                 
+To https://github.com/{YOUR_USERNAME}/{YOUR_REPO}.git                                                                                       
+ * [new branch]      master -> master 
+```
+ 
 >- Before continuing you need to familiarize yourself with some useful git commands
 - Basic commands needed
 ```
@@ -79,37 +110,3 @@ $ git status
 4) To see the beginning of the merge conflict in your file, search the file for the conflict marker ```<<<<<<<```. When you open the file in your text editor, you'll see the changes from the HEAD or base branch after the line ```<<<<<<< HEAD```. Next, you'll see ```=======```, which divides your changes from the changes in the other branch, followed by ```>>>>>>> BRANCH-NAME```.
 5) Decide if you want to keep only your branch's changes, keep only the other branch's changes, or make a brand new change, which may incorporate changes from both branches. Delete the conflict markers ```<<<<<<<```, ```=======```, ```>>>>>>>``` and make the changes you want in the final merge. In this example, both changes are incorporated into the final merge.
 6) Add , commit and push changes.
-
-
->- Create PAT(Personal access token) on github:
-[PAT creation](https://raw.githubusercontent.com/devgemmy/gist-images/main/git-token.png)
->- Then you need to clone your repository
-```shell
-root@896cf839cf9a:/# git clone https://{YOUR_PERSONAL_TOKEN}@github.com/{YOUR_USERNAME}/{YOUR_REPO}.git                  
-Cloning into '{YOUR_REPO}'...
-warning: You appear to have cloned an empty repository.
-```
->- All you need to do now is to navigate to the repository, create the README.md and push the modifications
-```shell
-root@896cf839cf9a:/# cd {YOUR_REPO}/
-root@896cf839cf9a:/{YOUR_REPO}#
-```
-```shell
-root@896cf839cf9a:/{YOUR_REPO}# echo 'My first readme' > README.md                                                                 
-root@896cf839cf9a:/{YOUR_REPO}# cat README.md                                                                                      
-My first readme 
-```
-```shell
-root@896cf839cf9a:/{YOUR_REPO}# git add .
-root@896cf839cf9a:/{YOUR_REPO}# git commit -m 'My first commit'
-[master (root-commit) 98eef93] My first commit
- 1 file changed, 1 insertion(+)
- create mode 100644 README.md
-root@896cf839cf9a:/{YOUR_REPO}# git push                                                                                           
-Enumerating objects: 3, done.                                                                                                         
-Counting objects: 100% (3/3), done.                                                                                                   
-Writing objects: 100% (3/3), 212 bytes | 212.00 KiB/s, done.                                                                          
-Total 3 (delta 0), reused 0 (delta 0)                                                                                                 
-To https://github.com/{YOUR_USERNAME}/{YOUR_REPO}.git                                                                                       
- * [new branch]      master -> master 
-```
