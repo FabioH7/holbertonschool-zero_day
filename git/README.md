@@ -111,3 +111,4 @@ $ git status
 >- 4) To see the beginning of the merge conflict in your file, search the file for the conflict marker ```<<<<<<<```. When you open the file in your text editor, you'll see the changes from the HEAD or base branch after the line ```<<<<<<< HEAD```. Next, you'll see ```=======```, which divides your changes from the changes in the other branch, followed by ```>>>>>>> BRANCH-NAME```.
 >- 5) Decide if you want to keep only your branch's changes, keep only the other branch's changes, or make a brand new change, which may incorporate changes from both branches. Delete the conflict markers ```<<<<<<<```, ```=======```, ```>>>>>>>``` and make the changes you want in the final merge. In this example, both changes are incorporated into the final merge.
 >- 6) Add , commit and push changes.
+## Enjoy your time using Git!
