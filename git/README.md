@@ -80,19 +80,19 @@ The git push command is used to upload *local* repository content to a *remote* 
 ```
 git pull
 ```
-The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content. Merging remote upstream changes into your local repository is a common task in Git-based collaboration work flows.
+>The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content. Merging remote upstream changes into your local repository is a common task in Git-based collaboration work flows.
 ### Branching and merging
 - Understanding branching
-Branching in Git is used as a form of creating an identical copy of the current files and materials currently stored in your repository. Let's take a simple example that Team A and Team B need to update different files on the same *main* branch. In order to avoid conflict and confusion both of these teams would create new branches(branch a and branch b) so they can update and test their code without changing anything in the source material.
+>Branching in Git is used as a form of creating an identical copy of the current files and materials currently stored in your repository. Let's take a simple example that Team A and Team B need to update different files on the same *main* branch. In order to avoid conflict and confusion both of these teams would create new branches(branch a and branch b) so they can update and test their code without changing anything in the source material.
 - Understanding merging
-Merging basically merges the updated files of different branches to other branches. In the above example, suppose that Team A and Team B have updated and successfully tested their code and are ready to update the final 'main' branch. They would merge their individual branches with the main branch, thus updating the final product.
+>Merging basically merges the updated files of different branches to other branches. In the above example, suppose that Team A and Team B have updated and successfully tested their code and are ready to update the final 'main' branch. They would merge their individual branches with the main branch, thus updating the final product.
 - Merging conflicts
-Merge conflicts occur when competing changes are made to the same line of a file, or when one person edits a file and another person deletes the same file.
+>Merge conflicts occur when competing changes are made to the same line of a file, or when one person edits a file and another person deletes the same file.
 To resolve a merge conflict caused by competing line changes, you must choose which changes to incorporate from the different branches in a new commit.
 For example, if you and another person both edited the file **styleguide.md** on the same lines in different branches of the same Git repository, you'll get a merge conflict error when you try to merge these branches. You must resolve this merge conflict with a new commit before you can merge these branches.
 - Resolving merge conflicts using the terminal
-1) In the terminal, ```cd``` into the repository that has the conflict
-2) Generate a list of the files affected by the merge conflict. In this example, the file **styleguide.md** has a merge conflict.
+>- 1) In the terminal, ```cd``` into the repository that has the conflict
+>- 2) Generate a list of the files affected by the merge conflict. In this example, the file **styleguide.md** has a merge conflict.
 ```
 $ git status
 > # On branch branch-b
@@ -106,7 +106,7 @@ $ git status
 > #
 > no changes added to commit (use "git add" and/or "git commit -a")
 ```
-3) Open a text editor of your choice and navigate to the conflicted file
-4) To see the beginning of the merge conflict in your file, search the file for the conflict marker ```<<<<<<<```. When you open the file in your text editor, you'll see the changes from the HEAD or base branch after the line ```<<<<<<< HEAD```. Next, you'll see ```=======```, which divides your changes from the changes in the other branch, followed by ```>>>>>>> BRANCH-NAME```.
-5) Decide if you want to keep only your branch's changes, keep only the other branch's changes, or make a brand new change, which may incorporate changes from both branches. Delete the conflict markers ```<<<<<<<```, ```=======```, ```>>>>>>>``` and make the changes you want in the final merge. In this example, both changes are incorporated into the final merge.
-6) Add , commit and push changes.
+>- 3) Open a text editor of your choice and navigate to the conflicted file
+>- 4) To see the beginning of the merge conflict in your file, search the file for the conflict marker ```<<<<<<<```. When you open the file in your text editor, you'll see the changes from the HEAD or base branch after the line ```<<<<<<< HEAD```. Next, you'll see ```=======```, which divides your changes from the changes in the other branch, followed by ```>>>>>>> BRANCH-NAME```.
+>- 5) Decide if you want to keep only your branch's changes, keep only the other branch's changes, or make a brand new change, which may incorporate changes from both branches. Delete the conflict markers ```<<<<<<<```, ```=======```, ```>>>>>>>``` and make the changes you want in the final merge. In this example, both changes are incorporated into the final merge.
+>- 6) Add , commit and push changes.
