@@ -3,7 +3,7 @@
 
 ## What is Git
 
-     Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency . To learn more about Git click [here](https://git-scm.com/)
+>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency . To learn more about Git click [here](https://git-scm.com/)
      
 ## How to set up git in your sandbox
 
@@ -63,20 +63,21 @@ To https://github.com/{YOUR_USERNAME}/{YOUR_REPO}.git
 ```
  
 >- Before continuing you need to familiarize yourself with some useful git commands
-- Basic commands needed
+[Git Commands](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdev.to%2Fneshaz%2Fgit-commands-ultimate-tutorial-part-2-7ko&psig=AOvVaw0oKtIx19UjDhFwxM3wngZh&ust=1663852393397000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPjK9dL7pfoCFQAAAAAdAAAAABAD)
+
 ```
 git add file_name
 git add .
 ```
-The git add command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit
+> The git add command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit
 ```
 git commit -m "Meaningful message"
 ```
-Create a new commit containing the current contents of the index and the given log message describing the changes
+> Create a new commit containing the current contents of the index and the given log message describing the changes
 ```
 git push
 ```
-The git push command is used to upload *local* repository content to a *remote* repository. Pushing is how you transfer commits from your local repository to a remote repo.
+> The git push command is used to upload *local* repository content to a *remote* repository. Pushing is how you transfer commits from your local repository to a remote repo.
 ```
 git pull
 ```
