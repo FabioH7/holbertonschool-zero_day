@@ -28,9 +28,10 @@ $ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 ## How to create a repository
 
->- Using the graphic interface on the [Github](https://github.com/) website.
-[Repostitory creation](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcooc-china.gitbooks.io%2Fcooc-howto-book%2Fenglish-version%2Fcreate-the-book-and-make-connection-with-github-repository.html&psig=AOvVaw3gDZie24JoAbJrWZoqD4Za&ust=1663849720214000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMim7bPxpfoCFQAAAAAdAAAAABAP)
-[PAT creation](https://raw.githubusercontent.com/devgemmy/gist-images/main/git-token.png)
+>- Using the graphic interface on the [Github](https://github.com/) website create a repository like the following image!
+![Repostitory creation](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcooc-china.gitbooks.io%2Fcooc-howto-book%2Fenglish-version%2Fcreate-the-book-and-make-connection-with-github-repository.html&psig=AOvVaw3gDZie24JoAbJrWZoqD4Za&ust=1663849720214000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMim7bPxpfoCFQAAAAAdAAAAABAP)
+>- Create your PAT in [Github](https://github.com/).
+![PAT creation](https://raw.githubusercontent.com/devgemmy/gist-images/main/git-token.png)
 >- Then you need to clone your repository
 ```shell
 root@896cf839cf9a:/# git clone https://{YOUR_PERSONAL_TOKEN}@github.com/{YOUR_USERNAME}/{YOUR_REPO}.git                  
@@ -63,7 +64,7 @@ To https://github.com/{YOUR_USERNAME}/{YOUR_REPO}.git
 ```
  
 - Before continuing you need to familiarize yourself with some useful git commands
-[Git Commands](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdev.to%2Fneshaz%2Fgit-commands-ultimate-tutorial-part-2-7ko&psig=AOvVaw0oKtIx19UjDhFwxM3wngZh&ust=1663852393397000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPjK9dL7pfoCFQAAAAAdAAAAABAD)
+![Git Commands](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdev.to%2Fneshaz%2Fgit-commands-ultimate-tutorial-part-2-7ko&psig=AOvVaw0oKtIx19UjDhFwxM3wngZh&ust=1663852393397000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPjK9dL7pfoCFQAAAAAdAAAAABAD)
 
 ```
 git add file_name
